@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIXCraft Builder | Interface Moderna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="layout-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand__icon">A</span>
+          <div>
+            <p class="brand__label">AIXCraft</p>
+            <p class="brand__sub">Builder</p>
+          </div>
+        </div>
+
+        <nav class="menu" aria-label="Principal">
+          <button class="menu__item menu__item--active">Visão Geral</button>
+          <button class="menu__item">Projetos</button>
+          <button class="menu__item">Fluxos</button>
+          <button class="menu__item">Equipe</button>
+          <button class="menu__item">Configurações</button>
+        </nav>
+
+        <div class="sidebar__footer">
+          <p>Escalável por padrão</p>
+          <small>Design system + componentes reutilizáveis</small>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <h1>Interface Moderna e Escalável</h1>
+            <p>Uma base pronta para crescer com o seu produto.</p>
+          </div>
+          <div class="actions">
+            <button class="btn btn--ghost">Exportar</button>
+            <button class="btn btn--primary">Novo Projeto</button>
+          </div>
+        </header>
+
+        <section class="metrics" aria-label="Métricas principais">
+          <article class="card metric">
+            <p class="metric__label">Projetos Ativos</p>
+            <strong class="metric__value">24</strong>
+            <span class="metric__delta metric__delta--up">+12% no mês</span>
+          </article>
+          <article class="card metric">
+            <p class="metric__label">Deploys Semanais</p>
+            <strong class="metric__value">116</strong>
+            <span class="metric__delta metric__delta--up">+8% na semana</span>
+          </article>
+          <article class="card metric">
+            <p class="metric__label">Tempo Médio</p>
+            <strong class="metric__value">4m 32s</strong>
+            <span class="metric__delta metric__delta--down">-5% latência</span>
+          </article>
+        </section>
+
+        <section class="grid">
+          <article class="card panel">
+            <div class="panel__header">
+              <h2>Pipeline de Entrega</h2>
+              <button class="chip">Tempo real</button>
+            </div>
+            <ul class="timeline" id="timeline"></ul>
+          </article>
+
+          <article class="card panel">
+            <div class="panel__header">
+              <h2>Distribuição de Recursos</h2>
+            </div>
+            <div class="bars" id="resource-bars"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
